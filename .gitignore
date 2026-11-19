@@ -1,0 +1,35 @@
+# Build output
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.d
+*.pdb
+*.ilk
+
+# Debug / profiling
+*.log
+*.dSYM/
+core
+vgcore.*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# clangd cache
+.cache/
+compile_commands.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

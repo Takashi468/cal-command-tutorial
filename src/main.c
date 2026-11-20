@@ -1,3 +1,4 @@
+#include "day_mon.h"
 #include <stdio.h>
 #include <time.h>
 
@@ -47,7 +48,8 @@ calendar_now()
         printf("   %s %d\n", nameMon[t.tm_mon], t.tm_year + 1900);
         printf(nameweeks);
         int day_1 = calculate_day_1(t.tm_mon + 1, t.tm_year + 1900);
-        printf("%d", day_1);
+        // printf("%d", day_1);
+        day_mon(day_1, (t.tm_mon + 1));
     } else {
         printf("t.tm_mon: %d", t.tm_mon);
     }

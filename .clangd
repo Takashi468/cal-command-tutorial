@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=https://json.schemastore.org/clangd.json
 # บังคับให้ clangd มองไฟล์ทั้งหมดในโปรเจกต์นี้เป็น C (ไม่ใช่ C++)
 CompileFlags:
-  Add: [-xc, -Wall, -Wextra, -std=c17]
+  Add: [-xc, -Wall, -Wextra, -std=c17, -I../include]

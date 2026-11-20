@@ -1,5 +1,5 @@
 CC      := gcc
-CFLAGS  := -g -Wall -Wextra -std=c17
+CFLAGS  := -g -Wall -Wextra -std=c17 -Iinclude
 SRC     := $(wildcard src/*.c)
 OBJ     := $(patsubst src/%.c,build/%.o,$(SRC))
 BIN     := build/prog

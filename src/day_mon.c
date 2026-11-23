@@ -39,25 +39,25 @@ check_mon(int month)
 int
 day_mon(int start, int mon)
 {
-    int i;
-    int count_day; // 1-7 day + " "
-    // int day_in_num;
-    // int star_1;
-    // int end;
+    // printf("start: %d", start);
+    // printf("mon: %d", mon);
     printf("\n");
-    for (i = 0; i <= start; i++) {
-        // printf(" ");
-        count_day += 1;
-        if (i == start) {
-            // printf("1");
-            for (count_day = 1; count_day <= check_mon(mon); count_day++) {
-                printf("%2d ", count_day);
-                if (count_day % 7 == 0) {
-                    printf("\n");
-                }
-            }
+    int i;
+    int count_day;
+    int count_day2 = start;
+    // for (i = 0; i <= start; i++) {
+    for (i = 0; i < start; i++) {
+        printf("   ");
+    }
+    // if (i == start) {
+    for (count_day = 1; count_day <= check_mon(mon); count_day++) {
+        count_day2 += 1;
+        printf("%3d", count_day);
+        if (count_day2 % 7 == 0) {
+            printf("\n");
         }
     }
-    // printf(" End");
+    // }
+    // }
     return 0;
 }

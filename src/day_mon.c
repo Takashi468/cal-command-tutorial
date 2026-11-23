@@ -39,17 +39,13 @@ check_mon(int month)
 int
 day_mon(int start, int mon)
 {
-    // printf("start: %d", start);
-    // printf("mon: %d", mon);
     printf("\n");
     int i;
     int count_day;
     int count_day2 = start;
-    // for (i = 0; i <= start; i++) {
     for (i = 0; i < start; i++) {
         printf("   ");
     }
-    // if (i == start) {
     for (count_day = 1; count_day <= check_mon(mon); count_day++) {
         count_day2 += 1;
         printf("%3d", count_day);
@@ -57,7 +53,5 @@ day_mon(int start, int mon)
             printf("\n");
         }
     }
-    // }
-    // }
     return 0;
 }

@@ -1,6 +1,6 @@
 #ifndef CALENDAR_NOW_H
 #define CALENDAR_NOW_H
 
-void calendar_now();
+int calendar_now(int mon);
 
 #endif

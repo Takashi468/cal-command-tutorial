@@ -7,12 +7,12 @@ int
 main(void)
 {
     char command[50];
+    printf("===============================================\n");
+    printf("select command\n");
+    printf("1. cal - calender by entering the month.\n");
+    printf("2. exit - exit program\n");
+    printf("===============================================\n");
     for (;;) {
-        printf("===============================================\n");
-        printf("select command\n");
-        printf("1. cal - calender by entering the month.\n");
-        printf("2. exit - exit program\n");
-        printf("===============================================\n");
         scanf_s("%s", command);
         if (strcmp(command, "cal") == 0) {
             enter_mon_a_year();

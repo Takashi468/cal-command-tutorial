@@ -30,7 +30,7 @@ check_mon(int month)
         break;
 
     default:
-        printf("กรอกหมายเลขเดือนไม่ถูกต้อง\n");
+        printf("Fill the month is not correct\n");
         return 0;
         break;
     }

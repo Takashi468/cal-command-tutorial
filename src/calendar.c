@@ -1,3 +1,4 @@
+#include "calendar.h"
 #include "day_mon.h"
 #include <iso646.h>
 #include <stdio.h>
@@ -15,7 +16,7 @@ calculate_day_1(int mon, int year)
 }
 
 int
-calendar_now(int mon)
+calendar_select(int mon)
 {
     const char *nameMon[12]
         = { "January", "February", "March",     "April",   "May",      "June",
@@ -43,3 +44,13 @@ calendar_now(int mon)
     // }
     return 0;
 }
+
+void
+calendar_now()
+{
+    struct tm t;
+    time_t now = time(NULL);
+    localtime_s(&t, &now);
+    printf("localtime_s: %02d \n", t.tm_mon + 1);
+    calendar_select(t.tm_mon + 1);
+};
